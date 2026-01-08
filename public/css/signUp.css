@@ -1,0 +1,126 @@
+/* Full page setting */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Container that contains all the assets */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(132deg, #aad1db, #d1bad6);
+    padding: 10px;
+}
+
+/* SignUp div */
+.signUp {
+    width: 100%;
+    max-width: 500px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10%;
+    padding: 20px;
+    background: linear-gradient(360deg, #a1cdf8, #eae8eb);
+    border-radius: 25px;
+    box-shadow: 10px 2px 40px #3a3838;
+    position: relative;
+} 
+
+/* h1 element "SingUp" */
+h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    background: linear-gradient(rgb(255, 8, 8) , rgb(25, 25, 243));
+    background-clip: text; -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Input boxes design */
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: linear-gradient(rgb(192, 54, 54) , rgb(25, 25, 243));
+	background-clip: text; -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Input div's design */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 30px;
+    border-bottom: 4px solid rgb(125, 34, 148);
+    padding-left: 20px;
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+/* Show password button */
+#show_btn {
+    border: none;
+    background: transparent;
+    padding-right: 15px;
+    color:rgb(125, 34, 148);
+    cursor:pointer;
+}
+
+/* SignUp button */
+#signUp_btn {
+    width: 400px;
+    border-radius: 30px;
+    border: none;
+    margin-top: 50px;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    font-size: 20px;
+    color: snow;
+    height: 50px;
+    background: linear-gradient(to right, rgb(82, 186, 247) , rgb(146, 4, 240));
+}
+
+/* Hover effect of the login button */
+#signUp_btn:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 8px #3a3838;
+}
+
+/* Have an account div */
+.haveAcc {
+    text-align: center;
+}
+
+/* Have an account text */
+p {
+   padding-top: 120px;
+   font-size: 20px;
+}
+
+/* Adds a gradient effect to have an account text */
+.gradient-text {
+    background: linear-gradient(rgb(255, 8, 8) , rgb(25, 25, 243));
+    background-clip: text; -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Making the application responsive */
+/* 430px width */
+@media (max-width: 430px) {
+    #signUp_btn {
+        max-width: 300px;
+    }
+}
+/* 280px width */
+@media (max-width: 280px) {
+    #signUp_btn {
+        max-width: 200px;
+    }
+}

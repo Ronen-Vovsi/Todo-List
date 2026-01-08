@@ -1,0 +1,181 @@
+/* Input boxes design */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Top div */
+.top_div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* title */
+h1{
+    margin: 0;
+    font-size: 30px;
+    background: linear-gradient(rgb(255, 8, 8) , rgb(25, 25, 243));
+    background-clip: text; -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Logout button */
+#logout_btn {
+    padding: 6px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    font-weight:700;
+    font-size:medium;
+
+    background: linear-gradient(to right, red , blue);
+	-webkit-text-fill-color: transparent;
+	background-clip: text; -webkit-background-clip:text;
+}
+
+/* Container 1 */
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(132deg, #aad1db, #6a277a);
+    padding: 10px;
+}
+
+/* max size contents div*/
+.todo-app {
+    width: 100%;
+    max-width: 540px;
+    margin: 100px auto 20px;
+    margin-top: 0px;
+}
+
+/* input box */
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to right,rgb(235, 232, 232),rgb(221, 199, 199));
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+}
+
+/* input box default text */
+input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background: linear-gradient(rgb(192, 54, 54) , rgb(25, 25, 243));
+	background-clip: text; -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* add button */
+#addBtn {
+    border: none;
+    outline: none;
+    padding: 1px 10px;
+    margin-top: 2px;
+    cursor: pointer;
+
+    background: linear-gradient(to right, red , blue);
+	-webkit-text-fill-color: transparent;
+	background-clip: text; -webkit-background-clip:text;
+}
+
+/* Container 2 */
+.container_2 {
+    background: linear-gradient(132deg, #dbe2e4, #e2cfe7);
+    width: 540px;
+    margin: 10px auto;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+/* tasks list */
+ul li {
+    list-style: none;
+    font-size: 15px;
+    padding:10px 8px 12px 20px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+/* marking the task with a crossline */
+ul li.checked {
+    color:  rgb(187, 9, 187);
+    text-decoration-line: line-through;
+    text-decoration-thickness: 2px;
+}
+
+/* x icon */
+ul li span {
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/* x icon hover */
+ul li span:hover{
+    background: rgb(216, 214, 215);
+    color: rgb(187, 9, 187);
+}
+
+/* Making the application responsive */
+/* 912px width */
+@media (min-width: 853px) {
+    .todo-app {
+        max-width: 835px;
+    }
+    .container_2 {
+        min-width: 835px;
+    }
+    #logout {
+        font-size: larger;
+    }
+    input {
+        height:40px;
+        font-size: larger;
+    }
+    ul li {
+        font-size: larger;
+    }
+    ul li span {
+        font-size: 38px;
+    }
+}
+
+/* 540px width */
+@media (max-width: 540px) {
+    .container_2 {
+        width: 522px;
+    }
+}
+
+/* 414px width */
+@media (max-width: 414px) {
+    .container_2 {
+        max-width: 396px;
+    }
+}
+
+/* 360px width */
+@media (max-width: 360px) {
+    .container_2 {
+        max-width: 342px;
+    }
+}
+

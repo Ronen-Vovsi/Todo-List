@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" href = "css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+</head>
+<body>
+    <!--Login-->
+    <div class="container">
+        <div class="login">
+            <h1>Login</h1>
+            <!--Login form-->
+            <form action="/login" method="post">
+                <!--Username div-->
+                <div class="row">
+                    <!--Username input-->
+                    <input type="text" id="Username" name="username" placeholder="Username" required>
+                </div>
+                <!--Password div-->
+                <div class="row">
+                    <!--Password input-->
+                    <input type="password" id="Password" name="password" placeholder="Password" required>
+                    <!--Show and hide password button-->
+                    <!--<button id="show_btn" onClick="show()">-->
+                        <i class ="fa-solid fa-eye-slash" id="show_btn" onclick = "show(), changeIcon(this)"></i>
+                    <!--</button>-->
+                </div>
+                <% if (messages.error) { %>
+                    <%= messages.error %>
+                <% } %>
+                <!--Login button-->
+                <button type="submit" id="login_btn"> <!--onclick="login()"-->
+                    Login
+                </button>
+                <!--Div for creating account link and text-->
+                <div class="createAcc">
+                    <P>
+                        <!--Text: Create an account-->
+                        <span class="gradient-text">Create an account</span>
+                    </P>
+                    <!--SignUp link-->
+                    <a id="SignUp" href="/signUp">Sign Up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+<script src="js/login.js"></script>
+</body>
+</html>
